@@ -1,0 +1,4 @@
+Problem: Majority of people only know a few and basic meal recipies, which limits them from exploring their hobbies/talent of cooking specific meals which can be frustrating.
+Solution: This app is based on a search mechanism that intends to search for different recipies across the world and make it available to the user at any convinient time. 
+MVP:-
+The application is to include a search bar that allows users to search for different recipies. This returns the results of different recipies that the user can select and read the recipie instructions with an option of viewing the live video demostration.
