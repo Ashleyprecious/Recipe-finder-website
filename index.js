@@ -1,9 +1,11 @@
+document.addEventListener("DOMContentLoaded",()=>{
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
 const mealList = document.getElementById('mealList');
 const modalContainer = document.querySelector('.modal-container');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipeCloseBtn');
+
 
 // Event listeners
 searchButton.addEventListener('click', async () => {
@@ -82,9 +84,16 @@ function showMealDetailsPopup(meal) {
         <div class="recipe-video">
             <a href="${meal.strYoutube}" target="_blank">Video Tutorial</a>
         </div>
+        <div class="like">
+            <button onclick="showconfetti()">
+                <span>❤️</span>
+                <span>Like</span>
+            </button>
+        </div>
     `;
     modalContainer.style.display = 'block';
 }
+
 
 // Event listener for popup close button
 recipeCloseBtn.addEventListener('click', closeRecipeModal);
@@ -112,3 +121,16 @@ window.addEventListener('load', () => {
     searchInput.value = 'chicken';
     performSearch();
 });
+});
+function showconfetti() {
+    confetti(
+        {
+            particleCount: 350,
+            startVelocity: 30,
+            spread: 960,
+            origin: {
+                x: Math.random(),
+            }
+        }
+    );
+}
