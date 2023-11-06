@@ -81,9 +81,6 @@ function showMealDetailsPopup(meal) {
         <div class="recipe-img">
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
         </div>
-        <div class="recipe-video">
-            <a href="#" >Video Tutorial</a>
-        </div>
         <div class="like">
             <button onclick="showconfetti()">
                 <span>❤️</span>
@@ -116,11 +113,6 @@ async function performSearch() {
     }
 }
 
-// Perform a chicken search on page load
-window.addEventListener('load', () => {
-    searchInput.value = 'chicken';
-    performSearch();
-});
 });
 function showconfetti() {
     confetti(
