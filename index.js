@@ -82,7 +82,7 @@ function showMealDetailsPopup(meal) {
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
         </div>
         <div class="recipe-video">
-            <a href="${meal.strYoutube}" target="_blank">Video Tutorial</a>
+            <a href="#" >Video Tutorial</a>
         </div>
         <div class="like">
             <button onclick="showconfetti()">
