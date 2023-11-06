@@ -113,6 +113,12 @@ async function performSearch() {
     }
 }
 
+// Perform a chicken search on page load
+window.addEventListener('load', () => {
+    searchInput.value = 'chicken';
+    performSearch();
+});
+
 });
 function showconfetti() {
     confetti(
